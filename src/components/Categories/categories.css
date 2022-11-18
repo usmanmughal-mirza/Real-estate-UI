@@ -1,0 +1,176 @@
+
+.categories {
+    padding: 6rem 5rem;
+    position: relative;
+}
+.categories__mainheading {
+    font-weight: 400;
+    padding-bottom: 2rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.2px;
+    color: #151515;
+    position: relative;
+    padding-left: 5rem;
+}
+.categories__mainheading::before {
+    position: absolute;
+    left: -158px;
+    top: 25px;
+    content: "";
+    width: 13rem;
+    height: 1px;
+    background: #c2d3f2
+}
+.categories__mainheading::after {
+        position: absolute;
+        left: 50px;
+        top: 20px;
+        content: "";
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background: #bc986b;
+}
+.categories__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding:0 0 3rem 4rem;
+    transition: 0.3s all;
+}
+
+/* Small line --- on image container */
+.categories__content::before {
+    position: absolute;
+    left: 20px;
+    top: 0.8rem;
+    content: "";
+    width: 2.5rem;
+    height: 3px;
+    background-color: var(--clr-primary);
+    transition: 0.3s all;
+}
+/* ------ */
+.categories__content h3 {
+font-weight: 400 !important;
+color: white;
+transition: all 0.5s;
+}
+.categories__content p {
+    color: white;
+}
+.categories img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.categories-imagecontainer {
+    position: relative;
+    height: 20rem;
+    cursor: pointer;
+}
+/* BLACK MASK ON EVERY IMAGE CONTAINER  */
+.categories-imagecontainer::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.165);
+    transition: 0.5s all;
+}
+/* ----- */
+
+
+/* FIRST ROW -----------------------------------------------
+--------------------------------------------------------- */
+
+.categories__firstrow {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 1.5rem;
+}
+
+.categories__firstrow-imgcontainerone {
+    margin-right:1.5rem ;
+}
+.categories__firstrow-imgcontainerone:hover .categories__content {
+    transform: translateX(-10px);
+}
+.categories__firstrow-imgcontainerone:hover::before {
+    background-color: rgba(0, 0, 0, 0.318);
+}
+
+.categories__firstrow-imgcontainertwo:hover::before {
+    background-color: rgba(0, 0, 0, 0.318);
+}
+.categories__firstrow-imgcontainerone:hover .categories__content::before {
+    top: 2rem;
+    transform: rotate(90deg);
+}
+.categories__firstrow-imgcontainertwo:hover .categories__content::before {
+    top: 2rem;
+    transform: rotate(90deg);
+}
+.categories__firstrow-imgcontainertwo:hover .categories__content {
+    transform: translateX(-10px);
+}
+/* SECOND ROW -----------------------------------------------------------------
+----------------------------------------------------------------- */
+
+.categories__secondrow {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+}
+.categories__secondrow-imgcontainerone:hover::before {
+    background-color: rgba(0, 0, 0, 0.318);
+}
+
+.categories__secondrow-imgcontainertwo:hover::before {
+    background-color: rgba(0, 0, 0, 0.318);
+}
+
+.categories__secondrow-imgcontainerthree:hover::before {
+    background-color: rgba(0, 0, 0, 0.318);
+}
+
+.categories__secondrow-imgcontainerone:hover .categories__content::before {
+    top: 2rem;
+    transform: rotate(90deg);
+}
+
+.categories__secondrow-imgcontainerone:hover .categories__content {
+    transform: translateX(-10px);
+}
+
+.categories__secondrow-imgcontainertwo:hover .categories__content::before {
+    top: 2rem;
+    transform: rotate(90deg);
+}
+
+.categories__secondrow-imgcontainertwo:hover .categories__content {
+    transform: translateX(-10px);
+}
+
+.categories__secondrow-imgcontainerthree:hover .categories__content::before {
+    top: 2rem;
+    transform: rotate(90deg);
+}
+
+.categories__secondrow-imgcontainerthree:hover .categories__content {
+    transform: translateX(-10px);
+}
+/* ------------------------------------------------------------------ */
+
+
+/* MEDIA QUERIES ----------------------------------------------------
+------------------------------------------------------------------ */
+
+@media(max-width:1200px) {
+    .categories {
+        padding: 6rem 2rem;
+        position: relative;
+        }
+}

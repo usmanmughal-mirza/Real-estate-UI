@@ -1,0 +1,38 @@
+
+.navbar__dropdown {
+    position: absolute;
+    top: 60px ;
+    right: -40px;
+    font-family: var(--body-font);
+    z-index: 9999;
+}
+.navbar__dropdown.hide {
+    display: none;
+}
+.navbar__dropdown a {
+ font-size: 0.85rem;
+ font-weight: 500;
+ text-transform: capitalize;   
+}
+
+/* PROPERTY ---- */
+.navbar__dropdown-property {
+    /* background-color: rgba(128, 128, 128, 0.074); */
+    width: 15rem;
+    padding: 1rem 1rem;
+    background-color: white;
+}
+.navbar__dropdown-property li {
+    /* background-color: tomato; */
+    padding: 0.4rem 0 !important;
+}
+
+/* BLOG -- */
+
+.navbar__dropdown-blog {
+    /* background-color: rgba(128, 128, 128, 0.074); */
+        width: 15rem;
+        padding: 0.8rem 1rem;
+        background-color: white;
+}
+

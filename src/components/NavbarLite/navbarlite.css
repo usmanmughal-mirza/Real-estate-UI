@@ -1,0 +1,51 @@
+.navbarlite {
+    font-family: var(--nav-font);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem 5rem;
+    border-bottom: 1px solid gray;
+}
+
+/* left side ------------------- */
+
+.navbarlite__leftside {
+    display: flex; 
+    align-items: center;
+}
+.navbarlite span{
+    display: flex;
+    align-items: center;
+}
+.navbarlite__leftside span:last-child::before {
+    content: "";
+    border: 1px solid gray;
+    height: 1rem;
+    margin: 0 2rem;
+}
+.navbarlite span .icon {
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
+    color: var(--clr-primary);
+}
+.navbarlite span p {
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.5s all;
+}
+.navbarlite span p:hover{
+    color: var(--clr-primary);
+}
+
+/* right side --------------- */
+.navbarlite__rightside {
+   justify-self: end;
+}
+
+/* MEDIA QUERIES ----------------------------- */
+
+@media(max-width:1092px) {
+.navbarlite {
+    display: none;
+}
+}

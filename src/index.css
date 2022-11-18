@@ -1,0 +1,44 @@
+:root{
+     --nav-font: 'Roboto Condensed', sans-serif;
+     --body-font: 'Poppins', sans-serif;
+
+/* FONTS -------------- */
+--fs-xl:40px;
+--fs-650:26px;
+--fs-600:22px;
+--fs-550:20px;
+--fs-500:18px;
+--fs-450:17px;
+--fs-400:14px;
+--fs-350:12px; 
+
+--fs-primary-heading:var(--fs-xl);
+--fs-nav:var(--fs-350);
+--fs-nav-lite:var(--fs-400);
+
+/* COLORS  ------------------     */
+
+--clr-primary:#bc986b;
+--clr-gray-500:#9c9c9c;
+--clr-gray-400:#9b9b9b;
+--clr-gray-300:#9a9a9a;
+--clr-black-500:#0d0d0d;
+--clr-black-400:#151515;
+--clr-white:#ffffff;
+
+--clr-accordion-para:var(--clr-gray-400);
+--clr-blog-para:var(--clr-gray-300);
+--footer-gray:#ffffff80;
+--clr-nav:var(--clr-black-500);
+--clr-nav-lite:var(--clr-black-400);
+
+}
+
+/* MEDIA ------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+@media(max-width:600px) {
+    :root {
+        --fs-primary-heading:var(--fs-650);       
+    }
+}

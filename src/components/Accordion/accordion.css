@@ -1,0 +1,50 @@
+
+.accordion {
+    background: #f3f4f9;
+    padding:0 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.accordion__visiblecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.3rem 0;
+    position: relative;
+}
+.accordion__visiblecontainer h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    /* background-color: aqua; */
+    width: 90%;
+    cursor: pointer;
+}
+.accordion__visiblecontainer span {
+    background-color: var(--clr-primary);
+    color: white;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.accordion__hiddencontainer {
+
+}
+.accordion__hiddencontainer p {
+    border-top: 1px solid #dde1f0;
+font-size: .83rem;
+color: gray;
+padding-top: 1rem;
+line-height: 1.7;
+letter-spacing: 0.5px;
+opacity: 0.8;
+}

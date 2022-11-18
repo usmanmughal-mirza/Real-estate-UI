@@ -1,0 +1,285 @@
+.header {
+    display: grid;
+    grid-template-columns:36rem 1fr;
+    font-family: var(--body-font); 
+}
+.header__firstdiv {
+    background-color: rgba(0, 0, 0, 0.69);
+    padding-right: 2rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header__firstdiv h1 {
+    color: white;
+    font-weight: 400;
+    font-size: 2.5rem;
+    letter-spacing: 0.4px;
+    padding-bottom: 1.5rem;
+}
+
+/* SELECTION BOX ------------------------ */
+
+.header__firstdiv-selection__upperdiv {
+    display: flex;
+    justify-content: space-between;
+}
+.header__firstdiv-selection__lowerdiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.header__firstdiv-selection__upperdiv select {
+    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+    width: 14rem;
+    outline: none;
+}
+.header__firstdiv-selection__lowerdiv select {
+    font-size: 0.9rem;
+        padding: 0.8rem 0.5rem;
+        width: 9rem;
+        outline: none;
+}
+
+/* action buttons -- first div */
+.header__firstdiv-actions {
+    display: flex;
+}
+.header__firstdiv-actions div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.9rem;
+    width: 18rem;
+    border:1px solid gray;
+    padding: 0 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.header__firstdiv-actions div p{
+    color: white;
+    font-size: 0.95rem;
+}
+.header__firstdiv-actions div span {
+    background-color: white;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(128, 128, 128);
+}
+.header__firstdiv-actions button {
+    height: 3rem;
+    width: 9rem;
+    background-color: var(--clr-primary);
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s background-color;
+}
+.header__firstdiv-actions button:hover {
+    background: transparent;
+    border: 2px solid white;
+}
+/* Range selector--------------------------- 
+--------------------------------------------
+-------------------------------------------*/
+.header__firstdiv-rangeselector {
+    padding: 2rem 0;
+}
+.header__firstdiv-rangeselector-first {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.header__firstdiv-rangeselector-first p{
+    color: white;
+    font-size: 0.9rem;
+}
+.header__firstdiv-rangeselector-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.header__firstdiv-rangeselector-second p{
+    color: white;
+        font-size: 0.9rem;
+}
+input[type="range"]{
+    /* -webkit-appearance: none;-- with this property we display:none/hide by default range and
+     create our range with our own styling  */
+     appearance: none;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+    width:300px;
+    height:5px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: var(--clr-primary);
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: ew-resize;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* ------------------------------------ */
+
+/* MEDIA QUERIES ------------------------------------------------
+---------------------------------------------------------------- */
+
+
+@media(max-width:1200px) {
+    .header__firstdiv {
+        padding-left: 2rem;
+    }
+}
+
+/* 768px to 991px------- */
+@media(max-width:991px) {
+    .header {
+        grid-template-columns: 1fr;
+    }
+   .header__firstdiv {
+        padding:5rem 0;
+   }
+   .header__firstdiv h1 {
+       font-size: 2rem;
+       letter-spacing: 0px;
+   }
+   .header__firstdiv-selection {
+    width: 500px;
+    margin: auto;
+   }
+  
+  .header__firstdiv-rangeselector {
+    width: 500px;
+    margin: auto;
+  }
+.header__firstdiv-selection__upperdiv select {
+    width: 15rem;
+}
+
+.header__firstdiv-selection__lowerdiv select {
+    width: 10rem;
+}
+.header__firstdiv-actions {
+    width: 500px;
+    margin: auto;
+}
+input[type="range"] {
+    width: 350px;
+    height: 5px;
+}
+.header__firstdiv-actions {
+    justify-content: space-between;
+}
+
+}
+/* 576px to 767px-------------------------------------------
+----------------------------------------------------------- */
+@media(max-width:767px) {
+.header__firstdiv {
+        padding-top: 2.5rem;
+}
+.header__firstdiv h1 {
+    font-size: 1.7rem;
+    letter-spacing: 0px;
+    padding-bottom: 1.5rem;
+    color: white;
+}
+}
+/*  575px------------------------------------------------ */
+@media(max-width:575px) {
+.header__firstdiv-selection {
+    width: 100%;
+    }
+
+.header__firstdiv-rangeselector {
+    width: 100%;
+    }
+ .header__firstdiv {
+     padding-left: 1rem;
+     padding-right: 1rem;
+ }
+ .header__firstdiv-selection__upperdiv {
+     flex-direction: column;
+ }
+
+ .header__firstdiv-selection__lowerdiv {
+     flex-direction: column;
+     margin: 0;
+ }
+ .header__firstdiv-selection__upperdiv select {
+     width: 100%;
+     margin-bottom: 1rem;    
+ }
+
+ .header__firstdiv-selection__lowerdiv select {
+     width: 100% ;
+     margin-bottom: 1rem;
+ }
+ .header__firstdiv-actions {
+    justify-content: flex-start;
+ }
+ .header__firstdiv-rangeselector {
+     padding:0.5rem 0 2rem 0;
+ }
+ input[type="range"] {
+    width: 70%;
+ }
+ .header__firstdiv-actions {
+    flex-direction: column;
+    display: none;
+ }
+ 
+}
+/* ------------------------------------------------------
+-------------------------------------------------------- */
+@media(max-width:475px) {
+.header__firstdiv-rangeselector-first {
+       flex-direction: column;
+       align-items: flex-start;
+    }
+.header__firstdiv-rangeselector-second {
+    flex-direction: column;
+        align-items: flex-start;
+}
+.header__firstdiv-rangeselector p {
+    padding-bottom: 1rem;
+}
+        input[type="range"] {
+            width: 100%;
+        }
+ .header__firstdiv-actions {
+     flex-direction: column;
+ }
+ .header__firstdiv-actions div {
+    margin-bottom: 1rem;
+ }
+}
+
+/* ------------------------------------------------------
+-------------------------------------------------------- */
+@media(max-width:375px) {
+
+}

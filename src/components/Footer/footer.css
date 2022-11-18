@@ -1,0 +1,155 @@
+
+.footer {
+    padding: 5rem 5rem;
+background-color: #31323c;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* FIRST DIV ----------------------------------------- */
+.footer__firstdiv {
+    border-right: 1px solid rgba(128, 128, 128, 0.41);
+}
+.footer-mainheading {
+    color: white;
+    font-size: 1.4rem;
+    position: relative;
+    padding-left:1.7rem;
+}
+.footer-mainheading::before {
+left: -1px;
+top: 10px;
+position: absolute;
+background-color: var(--clr-primary);
+content: "";
+height: 0.8rem;
+width: 0.8rem;
+}
+/* CARD ------- */
+
+.footer__firstdiv-card {
+    display: flex;
+    margin: 2rem 0;
+    padding-top: 6px;
+    padding-bottom: 0;
+    transition: 0.2s background-color;
+    cursor: pointer;
+    font-family: var(--nav-font);
+}
+
+.footer__firstdiv-card:hover {
+background-color: rgba(128, 128, 128, 0.178);
+}
+.footer__firstdiv-card__img img {
+    width: 4rem;
+    height:3.8rem;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.footer__firstdiv-card__content {
+    margin-left: 1rem;
+}
+.footer__firstdiv-card__content h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+.footer__firstdiv-card__content p {
+    font-size: .95rem;
+    color: var(--clr-primary);
+    letter-spacing: 1px;
+}
+
+/* SECOND DIV-----------------------------------------------------  */
+
+.footer__seconddiv {
+    padding-left: 4rem;
+}
+.footer__seconddiv-iconcontainer {
+display: flex;
+align-items: center;
+padding: 1rem 0;
+}
+.footer__seconddiv-iconcontainer p {
+    color: white;
+    opacity:0.95 ;
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s color;
+}
+.footer__seconddiv-iconcontainer p:hover{
+    color: orange;
+}
+.footer__seconddiv div:nth-child(3) p {
+font-size: .9rem;
+letter-spacing: 1px;
+}
+.footer__seconddiv div:last-child p {
+font-size: .85rem;
+letter-spacing: 1px;
+}
+.footer-secondiv_icon {
+color: gray;
+font-size: 1.55rem;
+opacity: 0.4;
+}
+.footer__seconddiv div:last-child .icon {
+font-size: 2.3rem;
+}
+
+/* THIRD DIV ---------------------------------------------------- */
+
+.footer__thirddiv {
+
+}
+.footer__thirddiv p {
+    color: gray;
+    font-size: .9rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+}
+
+.footer__thirddiv-inputcontainer {
+    background-color: #494a53;
+    /* height: 2.5rem; */
+    display: flex;
+    justify-content: space-between;
+}
+.footer__thirddiv-inputcontainer input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 1rem;
+    font-size: 0.92rem;
+}
+.footer__thirddiv-inputcontainer button {
+    padding: 1rem 1rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--clr-primary);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.footer__thirddiv-iconcontainer {
+    margin-top: 1rem;
+}
+.footer__thirddiv-iconcontainer .icon {
+    color: gray;
+    margin-right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity:0.8 ;
+    transition: 0.5s color;
+}
+.footer__thirddiv-iconcontainer .icon:hover {
+    color: orange;
+}

@@ -1,0 +1,194 @@
+
+.properties-card {
+    background-color: white;
+    padding: 1.5rem;
+    position: relative;
+    margin-bottom: 2rem;
+    height: 23rem;
+    cursor: pointer;
+    transition: 1s all;
+}
+.properties-card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* CROUSEL ---------------------------------- */
+.properties-card__imgcrousel {
+ position: absolute;
+ top: -15px;
+ left: 50%;
+transform: translate(-50%,0);
+ /* background-color: saddlebrown; */
+ width: 100%;
+ padding: 0 1.5rem;
+}
+.properties-card__imgcrousel-singleimg {     
+    height: 12rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.properties-card__imgcrousel img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+.properties-card:hover img {
+    transform: scale(1.2);
+}
+/* PRICE ---------------------------------- */
+.properties-card__imgcrousel-singleimg-price {
+    position: absolute;    
+    left: 0;
+    bottom: 0;
+}
+.properties-card__imgcrousel-singleimg-price p {
+    background-color: var(--clr-primary);
+    color: white;
+    padding: 4px 1rem;
+    font-size: 0.9rem;
+}
+/* ARROW CONTAINER -------------------------- */
+.properties-card__imgcrousel__arrowcontainer{
+position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.074);
+    height: 100%;
+    width: 100%;
+}
+
+.crousel-arrowleft {
+position: absolute;
+top: 50%;
+transform: translate(0,-50%);
+font-size: 2.5rem;
+background: rgba(21, 21, 21, 0.2);
+color: white;
+cursor: pointer;
+left: 0;
+transition: 0.4s all;
+display: none;
+}
+.crousel-arrowleft:hover {
+    background-color: black;
+}
+.crousel-arrowright {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 2.5rem;
+    background: rgba(21, 21, 21, 0.2);
+    color: white;
+    cursor: pointer;
+    right: 0;
+    transition: 0.4s all;
+    display: none;
+}
+.crousel-arrowright:hover {
+    background-color: black;
+}
+.properties-card:hover .crousel-arrowleft {
+    display: block;
+}
+
+.properties-card:hover .crousel-arrowright {
+    display: block;
+}
+/* ---------------------------------------- */
+/* CONTENT --------------------------------
+--------------------------------------------
+-------------------------------------------- */
+.properties-card__contentcontainer {
+position: absolute;
+/* background-color: white; */
+width: 85%;
+bottom: 0;
+}
+
+.properties-card__content-subcontainer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+    margin: 10px 0 30px 0;
+}
+.properties-card__contentcontainer > h3 {
+color: var(--clr-primary);
+font-weight: 400;
+font-size: 1.1rem;
+border-bottom: 1px solid gray;
+position: relative;
+padding-bottom: 25px ;
+}
+
+.properties-card__content-subcontainer p {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.931);
+}
+
+/* icon  ---*/
+.properties-card__content-subcontainer-iconcontainer {
+    display: flex;
+    align-items: center;   
+}
+.properties-card__content-subcontainer-iconcontainer span {
+    order: -1;
+    margin-right: 8px ;
+    color: gray;
+}
+
+/* MEDIA QUERIES --------------------------------------------------------
+-----------------------------------------------------------------------
+------------------------------------------------------------------------ */
+
+/* 992px to 1200px */
+@media(max-width:1200px) {}
+
+/* 768px to 991px ------------------------ */
+@media(max-width:991px) {}
+
+/*576px to 767px  -- */
+@media(max-width:767px) {
+}
+
+/* 575px --------------------- */
+@media(max-width:575px) {}
+/* 375px --------------------- */
+@media(max-width:375px) {}
+
+/* MEDIA QUERIES --------------------------------------------------------
+-----------------------------------------------------------------------
+------------------------------------------------------------------------ */
+
+/* 992px to 1200px */
+@media(max-width:1200px) {
+ .properties-card__imgcrousel-singleimg {
+    height: 11rem;
+ }   
+.properties-card__contentcontainer>h3 {
+    padding-bottom: 15px;
+}
+.properties-card {
+    height: 21.5rem;
+}
+}
+
+/* 768px to 991px ------------------------ */
+@media(max-width:991px) {}
+
+/*576px to 767px  -- */
+@media(max-width:767px) {
+    .properties-card__imgcrousel-singleimg {
+            height: 16rem;
+        }
+        .properties-card {
+            height: 24rem;
+        }
+}
+
+/* 575px --------------------- */
+@media(max-width:575px) {}
+
+/* 375px --------------------- */
+@media(max-width:375px) {}

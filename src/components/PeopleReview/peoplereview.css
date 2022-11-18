@@ -1,0 +1,90 @@
+
+.peoplereview {
+    padding: 5rem 2rem;
+    background-color: #f3f4f9;
+}
+.peoplereview__subcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+.peoplereview__mainheading {
+    font-weight: 400;
+    padding-bottom: 2rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.2px;
+    color: #151515;
+    position: relative;
+    padding-left: 5rem;
+}
+.peoplereview__mainheading::before {
+position: absolute;
+    left: -158px;
+    top: 25px;
+    content: "";
+    width: 13rem;
+    height: 1px;
+    background: #c2d3f2
+}
+.peoplereview__mainheading::after {
+position: absolute;
+    left: 50px;
+    top: 20px;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #bc986b;
+}
+
+.peoplereview__card {
+    padding: 2.5rem;
+    background-color: white;
+    border: 5px;
+}
+.peoplereview__card-content {
+
+}
+.peoplereview__card-content p:first-child {
+    color: gray;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.peoplereview__card-content p:last-child {
+font-size: .83rem;
+width: 90%;
+line-height: 1.8;
+letter-spacing: 0.8px;
+padding-bottom: 1rem;
+}
+
+.peoplereview__card-personalinfo {
+    display: flex;
+    align-items: center;
+}
+
+.peoplereview__card-personalinfo__img img {
+width: 3rem;
+height: 3rem;
+object-fit: cover;
+border-radius: 50%;
+
+}
+
+.peoplereview__card-personalinfo-bio {
+margin-left: 1rem;
+}
+.peoplereview__card-personalinfo-bio h2 {
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 1.5;
+/* letter-spacing: 1px; */
+}
+.peoplereview__card-personalinfo-bio p {
+    font-size: .85rem;
+    color: var(--clr-primary);
+    letter-spacing: 0.8px;
+}
